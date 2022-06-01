@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,200;1,200;1,300 & family= Tiro+Devanagari+Sanskrit:ital@0;1 & family= Titillium+Web:ital,wght@0,300;1,200;1,300 & display=almashtirish');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container-grid{
+    display: grid;
+    width: 1000px;
+    margin: 0 auto;
+}
+header{
+    background-color: #C10A28;
+    padding: 30px 0 0;
+}
+.logo{
+    font-size: 20px;
+    color: yellow;
+    transform: matrix3d(20px);
+}
+header .container-grid {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    position: relative;
+}
+.nav{
+    grid-column: 2/4; 
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+.nav ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: .3s;
+    opacity: 0;
+}
+.nav ul li:hover::after{
+    opacity: 1;
+
+}
+.nav ul a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Tiro Devanagari sanskrit', serif;
+    font-size: 20px;
+}
+.num h1{
+    font-size: 27px;
+    color: gray;
+    font-family: 'Titillium Web', sans-serif;
+}
+.headbtm{
+    justify-self: right;
+}
+.headbtm button{
+    background-color: #8CA93D;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 14px 6px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    width: 160px;
+    font-size: 15px;
+    transition: .3s;
+}
+.headbtm button i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.headbtm button:hover {
+ background-color: white;
+ color: rgb(51, 49, 49);
+ box-shadow: 10px 5px 5px
+}
+.products{
+    grid-column: 1/6;
+}
+.products ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.products ul li {
+    padding: 40px 0 32px;
+    color: rgba(240, 248, 255, 0.731);
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Titillium Web', sans-serif;
+    transition: .5s;
+}
+.products ul li i {
+    font-size: 34px;
+    margin-right: 10px;
+}
+.products ul li:hover{
+    color: white;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 20;
+    
+}
+.line{
+    position: absolute;
+    width: 100%;
+    height: .5px;
+    background-color: rgba(240, 248, 255, 0.148);
+}
+#banner{
+    height: 800px;
+    width: 100%;
+    background-image: url(/homepage-slider-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#banner .container-grid{
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+.title h1{
+background-color:#4CB050;
+display: inline-block;
+color: white;
+font-size: 60px;
+padding: 10px;
+}
+.italy span {
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.boottom span {
+    font-size: 60px;
+    text-transform:uppercase ;
+    font-weight: 300;
+    color: white;
+}
+#uchinchi{
+    margin: 40px 0;
+}
+#uchinchi .container-grid {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+.box{
+   padding: 25px;
+   font-family: 'Tiro Devanagari Marathi', serif;
+   color: white;
+}
+.box1{
+    grid-area: 1/1/3/3;
+}
+.box4{
+    grid-area: 2/3/3/5;
+    background-image: url(/29.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.box h2 {
+    font-size: 50px;
+}
+.box p{
+    font-size: 20px;
+}
+.box button {
+    background-color:#C10A28 ;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Tiro Devanagari Marathi', serif;
+    transition: .3s;
+}
+.box button:hover{
+    background-color: rgba(244, 244, 244, 0.635);
+    color: black;
+    box-shadow: 10px 5px 5px
+}
+.box1{
+    background-image: url(/1.jpg);
+    background-size: cover;
+}
+.box1 h2{
+    color: white;
+    font-size: 45px;
+    position: relative;
+    top: 120px;
+    left: 40px;
+}
+.box1 p{
+    color: white;
+    font-size: 35px;
+    position: relative;
+    top: 125px;
+    left: 40px;
+}
+.box1 button{
+    width: 180px;
+    height: 45px;
+    border-radius: 20px;
+    position: relative;
+    top: 140px;
+    left: 40px;
+    font-size: 17px;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    transition: .3s;
+}
+.box1 button:hover{
+    background-color:white;
+    color: black;
+    box-shadow: 10px 5px 5px rgb(55, 53, 53);
+}
+.box2{
+    background-image: url(/54546.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.box2 h2{
+    font-size: 40px;
+    padding-left: 140px;
+}
+.box2 p{
+    padding-left: 140px;
+}
+.box4 p{
+   position: relative;
+   top: 40px;
+   left: -142px;
+   color: darkorange;
+   font-size: 20px;
+}
+.box4 h2 {
+    color: white;
+    font-size: 50px;
+    position: relative;
+    top: 30px;
+}
+.box3{
+    background-image: url(/3.jpg);
+    background-size: cover;
+    color: white;
+}
+.box3 h2{
+    font-size: 40px;
+    padding-left: 145px;
+}
+.box3 p{
+    padding-left: 160px;
+}
+.menu {
+    grid-column: 2/4;
+}
+.menu ul{
+    border: none;
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+}
+.menu ul li a{
+    position: relative;
+    margin: 0 30px;
+    left: 30px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+}
+.menu ul li a:hover{
+  color: rgb(146, 146, 146);
+    
+}
+#tortinchi .container-grid{
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     grid-template-rows: auto;
+     grid-gap: 15px;
+     justify-content: center;
+     font-family: 'Open Sans', sans-serif;
+     flex-wrap: wrap;
+}
+.chiziqcha{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+.box1_{
+    padding: 40px 0;
+    width: 340px;
+    height: 550px;
+}
+.box1_ h2{
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Tiro Kannada', serif;
+}
+.box1_ p{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 13px 0;
+    font-weight: 500;
+}
+.box11{
+    grid-column: 2/3;
+    background-size: cover;
+    background-position: center;
+}
+.box12{
+    grid-column: 3/4;
+    background-size: cover;
+    background-position: center;
+}
+.box13{
+    grid-column: 4/5;
+    background-size: cover;
+    background-position: center;
+}
+.tagch{
+    width: 30%;
+    height: 2px;
+    background-color: black;
+    
+}
+.tagch2{
+    position: relative;
+    left: 200px;
+    width: 30%;
+    height: 2px;
+    background-color: black;
+}
+.tagch p{
+    position: relative;
+    left: 100px;
+    bottom: 20px;
+}
+.box1_ span{
+  height: 35px;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius:50%;
+  padding: 10px;
+  position: relative;
+  top: 40px;
+  font-size: 12px;
+} 
+
+.box1_ b{
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+.box1_ h1{
+    position: relative;
+    top: 20px;
+    left: 80px;
+}
+.boxdollr span{
+    position: relative;
+    left: 180px ;
+    top: -5px;
+}
+.boxdollr b{
+    position: relative;
+    left:200px ;
+    top: -5px;
+}
+.boxdollr h1{
+    position: relative;
+    left:260px ;
+    top: -25px;
+}
+.box1_ button{
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    width: 140px;
+    height: 30px;
+    border-radius: 30px;
+    position: relative;
+    left: 87px;
+    cursor: pointer;
+    transition: .3s;
+}
+.box1_ button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+.box1_:hover{
+    padding: 40px 0;
+    width: 340px;
+    height: 550px;
+    transform: scale(1.1);
+    transition: .5s;
+}
+#beshinchi{
+    height: 400px;
+    width: 100%;
+    background-image: url(/5.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: 60px;
+}
+.boxrasm{
+    color: white;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    top: 60px;
+}
+
+.boxrasm h1{
+    font-size: 30px;
+    padding: 10px 0;
+    font-weight: 100;
+}
+
+.boxdoollr p{
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+    left: -20px;
+}
+.boxdoollr h1{
+    font-size: 60px;
+    position: relative;
+    top: -25px;
+    left: 8px;
+}
+.boxdoollr b{
+    font-size: 20px;
+    position: relative;
+    bottom: 70px;
+    left: 35px;
+}
+.navbarjon{
+    position: relative;
+    bottom: 120px;
+    left: 120px;
+}
+.boxrasm button{
+    width: 170px;
+    height: 35px;
+    border-radius: 20px;
+    background-color:#C10A28;
+    color: white;
+    position: relative;
+    bottom: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+.boxrasm button:hover{
+    background-color: rgba(255, 255, 255, 0.797);
+    color: black;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+#oltinchi .container-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    flex-wrap: wrap;
+}
+#yettinchi img{
+    width: 1520px;
+}
+ .boxbux{
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     display: block;
+     position: relative;
+     top: 230px;
+     left: -264px;
+     
+ }
+
+.boxbux h1{
+    padding: 10px 0;
+}
+.boxbux b{
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.boxbux button{
+    width: 140px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #C10A28;
+    color: white;
+}
+.boxbux button:hover{
+    background-color: antiquewhite;
+    color:black;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+#sakkizinchi{
+    height: 300px;
+}
